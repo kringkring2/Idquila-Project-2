@@ -66,6 +66,54 @@
 
     .programs { background: var(--cream); }
     .section-heading { text-align: center; max-width: 700px; margin: 0 auto 42px; }
+    .offering-list {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 34px 42px;
+      background: var(--white);
+      border-top: 4px solid var(--gold);
+      box-shadow: 0 14px 36px rgba(21,40,75,.08);
+      font-family: Arial, sans-serif;
+    }
+    .offering-list ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      columns: 2;
+      column-gap: 44px;
+    }
+    .offering-list li {
+      break-inside: avoid;
+      padding: 9px 0 9px 18px;
+      border-bottom: 1px solid #eceef2;
+      color: var(--ink);
+      line-height: 1.45;
+      position: relative;
+    }
+    .offering-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+    .supplemental {
+      margin: 18px 0 0;
+      padding-top: 20px;
+      border-top: 2px solid var(--navy);
+    }
+    .supplemental strong {
+      display: block;
+      color: var(--navy);
+      font-size: 16px;
+    }
+    .supplemental span {
+      color: var(--muted);
+      font-size: 14px;
+    }
     .program-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .program-card { background: var(--white); overflow: hidden; }
     .program-card img { width: 100%; height: 220px; object-fit: cover; }
@@ -101,6 +149,8 @@
       .hero-content { padding-top: 55px; }
       h1 { font-size: 50px; }
       .highlight-grid, .intro-grid, .program-grid, .footer-grid { grid-template-columns: 1fr; }
+      .offering-list { padding: 28px 24px; }
+      .offering-list ul { columns: 1; }
       .highlight-grid { box-shadow: none; }
       .highlight { border-right: 0; border-bottom: 1px solid #e7eaf0; }
       .highlights { margin-top: 0; }
@@ -178,20 +228,34 @@
 
     <section class="programs" id="programs">
       <div class="container">
-        <div class="section-heading"><p class="section-kicker">Academic Offerings</p><h2>Find your path</h2></div>
-        <div class="program-grid">
-          <article class="program-card">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students collaborating in a campus program">
-            <div class="program-card-content"><h3>College Programs</h3><p>Career-ready degree programs designed to develop knowledge, leadership, and professional skills.</p><a href="#admissions">View programs →</a></div>
-          </article>
-          <article class="program-card" id="campus">
-            <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=800&q=80" alt="Students celebrating graduation">
-            <div class="program-card-content"><h3>Senior High School</h3><p>Strong academic tracks and formative experiences that prepare students for college and career.</p><a href="#admissions">Explore tracks →</a></div>
-          </article>
-          <article class="program-card">
-            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" alt="A group of students sharing ideas">
-            <div class="program-card-content"><h3>Student Life</h3><p>Organizations, outreach initiatives, athletics, and campus activities that build community.</p><a href="#admissions">Experience KCC →</a></div>
-          </article>
+        <div class="section-heading">
+          <p class="section-kicker">College Department</p>
+          <h2>Curricular Offerings</h2>
+        </div>
+        <div class="offering-list">
+          <ul>
+            <li>Bachelor of Elementary Education (BEEd)</li>
+            <li>Bachelor of Early Childhood Education (BECEd)</li>
+            <li>Bachelor of Secondary Education (BSEd) major in English</li>
+            <li>Bachelor of Secondary Education (BSEd) major in Filipino</li>
+            <li>Bachelor of Secondary Education (BSEd) major in Mathematics</li>
+            <li>Bachelor of Secondary Education (BSEd) major in Science</li>
+            <li>Bachelor of Secondary Education (BSEd) major in Values Education</li>
+            <li>Bachelor of Physical Education (BPEd)</li>
+            <li>Bachelor of Arts in Philosophy (ABPhilo)</li>
+            <li>Bachelor of Science in Psychology (BSPsych)</li>
+            <li>Bachelor of Science in Criminology (BSCrim)</li>
+            <li>Bachelor of Science in Accountancy (BSA)</li>
+            <li>Bachelor of Science in Management Accounting (BSMA)</li>
+            <li>Bachelor of Science in Business Administration major in Financial Management</li>
+            <li>Bachelor of Science in Business Administration major in Marketing Management</li>
+            <li>Bachelor of Science in Information Technology (BSIT)</li>
+            <li>Bachelor of Science in Tourism Management (BSTM)</li>
+          </ul>
+          <div class="supplemental">
+            <strong>Supplemental Program for Non-Education Bachelor's Degree Graduates</strong>
+            <span>18 Units Professional Education</span>
+          </div>
         </div>
       </div>
     </section>
